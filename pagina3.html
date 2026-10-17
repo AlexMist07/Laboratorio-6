@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conejos Enanos | Mundo Conejo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #f1fbf3; }
+    .navbar { background: #5b3a29; }
+    .navbar .nav-link { color: #f5e6d8; font-weight: 500; }
+    .navbar .nav-link:hover { color: #fff; }
+    .navbar .nav-link.active { color: #fff; border-bottom: 3px solid #ffb86b; }
+    .navbar-brand { color: #ffb86b !important; font-weight: 700; }
+    .sq { aspect-ratio: 1 / 1; object-fit: cover; width: 100%; }
+    .title { font-size: clamp(2.2rem, 6vw, 4rem); font-weight: 800; color: #2e7d4f; }
+    .photo { border-radius: 1.5rem; border: 5px solid #fff; box-shadow: 0 .75rem 1.5rem rgba(46,125,79,.3); }
+    .photo.up { transform: translateY(-18px); }
+    footer { background: #5b3a29; color: #f5e6d8; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🐰 Mundo Conejo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina1.html">Página 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="pagina2.html">Página 2</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="pagina3.html">Página 3</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 3 IMÁGENES CUADRADAS -->
+  <header class="container pt-5">
+    <div class="row g-4 justify-content-center">
+      <div class="col-4 col-md-3"><img src="enano1.jpeg" class="sq photo" alt="Conejo enano 1"></div>
+      <div class="col-4 col-md-3"><img src="enano2.jpeg" class="sq photo up" alt="Conejo enano 2"></div>
+      <div class="col-4 col-md-3"><img src="enano3.jpeg" class="sq photo" alt="Conejo enano 3"></div>
+    </div>
+    <div class="text-center mt-5">
+      <span class="badge text-bg-success mb-2">Página 3</span>
+      <h1 class="title">Conejos Enanos</h1>
+      <p class="lead text-secondary">Pequeños en tamaño, enormes en ternura</p>
+    </div>
+  </header>
+
+  <main class="container py-4">
+    <div class="row g-4">
+
+      <div class="col-lg-7">
+        <h2 class="h3 fw-bold text-success">Pequeños gigantes</h2>
+        <p>
+          Los conejos enanos son un grupo de razas que se caracterizan por su tamaño reducido. Una de las más conocidas es
+          el Netherland Dwarf, que se desarrolló en los Países Bajos y que normalmente pesa menos de 1.2 kilogramos. Tienen
+          la cabeza redonda, el hocico corto, los ojos grandes y las orejas pequeñas, lo que les da un aspecto muy tierno.
+        </p>
+        <p>
+          Aunque son pequeños, tienen mucha energía y personalidad. Pueden ser tímidos o algo temperamentales al principio,
+          pero con paciencia y trato suave se vuelven cariñosos. Son muy inteligentes y pueden aprender su nombre, usar una
+          caja sanitaria y reconocer rutinas diarias.
+        </p>
+        <p>
+          Por su tamaño, son frágiles y necesitan un trato cuidadoso, sobre todo si hay niños en casa. También son
+          propensos a problemas dentales debido a su cráneo corto, por lo que el heno ilimitado y los objetos para roer son
+          indispensables, junto con revisiones periódicas con un veterinario de animales exóticos.
+        </p>
+      </div>
+
+      <!-- COMPONENTE BOOTSTRAP 1: TARJETAS CON DATOS -->
+      <div class="col-lg-5">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card text-center border-success h-100">
+              <div class="card-body">
+                <div class="fs-2">⚖️</div>
+                <h3 class="h6 mt-1">Peso</h3>
+                <p class="mb-0 small">0.5 – 1.2 kg</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-center border-success h-100">
+              <div class="card-body">
+                <div class="fs-2">🕒</div>
+                <h3 class="h6 mt-1">Vida</h3>
+                <p class="mb-0 small">8 – 12 años</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-center border-success h-100">
+              <div class="card-body">
+                <div class="fs-2">👂</div>
+                <h3 class="h6 mt-1">Orejas</h3>
+                <p class="mb-0 small">Cortas y erguidas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-center border-success h-100">
+              <div class="card-body">
+                <div class="fs-2">🏠</div>
+                <h3 class="h6 mt-1">Espacio</h3>
+                <p class="mb-0 small">Interior, amplio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPONENTE BOOTSTRAP 2: PESTAÑAS (NAV TABS) -->
+    <h2 class="h3 fw-bold text-success mt-5 mb-3">Guía para tu conejo enano</h2>
+    <ul class="nav nav-tabs" id="guia" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#t1" type="button" role="tab">🥕 Comida</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#t2" type="button" role="tab">🏡 Hogar</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#t3" type="button" role="tab">🩺 Salud</button>
+      </li>
+    </ul>
+    <div class="tab-content p-4 bg-white border border-top-0 rounded-bottom">
+      <div class="tab-pane fade show active" id="t1" role="tabpanel">
+        Heno a libre disposición, una pequeña cantidad de verduras frescas y pellets en porciones medidas. Las zanahorias y la fruta son solo premios ocasionales por su contenido de azúcar.
+      </div>
+      <div class="tab-pane fade" id="t2" role="tabpanel">
+        Necesita un corral o jaula amplia, un lugar donde esconderse, una caja sanitaria y tiempo diario para correr fuera. Debe evitarse el calor excesivo y las corrientes de aire.
+      </div>
+      <div class="tab-pane fade" id="t3" role="tabpanel">
+        Revisa regularmente sus dientes, uñas y oídos. Si deja de comer o de hacer sus necesidades por más de unas horas, acude de inmediato al veterinario.
+      </div>
+    </div>
+
+    <!-- COMPONENTE BOOTSTRAP 3: BOTÓN CON MODAL -->
+    <div class="text-center mt-5">
+      <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#dato">🐇 Dato curioso</button>
+    </div>
+    <div class="modal fade" id="dato" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title h5">¿Sabías que...?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            Los conejos dan pequeños saltos de alegría llamados "binkies" cuando están muy contentos. ¡Si tu conejo enano los hace, es señal de que se siente feliz y seguro!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">¡Qué tierno!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-5">
+      <a href="pagina2.html" class="btn btn-outline-success">← Anterior: Cabeza de León</a>
+      <a href="index.html" class="btn btn-success">Volver al inicio</a>
+    </div>
+  </main>
+
+  <footer class="text-center py-3 mt-4">
+    <small>Laboratorio 6 · Página sobre conejos</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
